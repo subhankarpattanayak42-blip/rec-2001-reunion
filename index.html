@@ -167,6 +167,41 @@
 
         .link-card:hover .arrow { transform: translateX(4px); color: #38bdf8; }
 
+        .link-card.featured {
+            border: 2px solid rgba(245, 158, 11, 0.6);
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(30, 41, 59, 0.6) 100%);
+            box-shadow: 0 0 24px rgba(245, 158, 11, 0.2), inset 0 0 12px rgba(245, 158, 11, 0.05);
+            padding: 24px 28px;
+        }
+
+        .link-card.featured:hover {
+            border-color: rgba(245, 158, 11, 0.9);
+            box-shadow: 0 0 32px rgba(245, 158, 11, 0.35), inset 0 0 16px rgba(245, 158, 11, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .link-card.featured .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(217, 119, 6, 0.2));
+            color: #fbbf24;
+            font-size: 1.8rem;
+        }
+
+        .link-card.featured .info h3 {
+            font-size: 1.15rem;
+            color: #fef3c7;
+        }
+
+        .link-card.featured .info p {
+            color: #d1d5db;
+        }
+
+        .link-card.featured .arrow {
+            color: #fbbf24;
+            font-size: 1.4rem;
+        }
+
         .link-card.coming-soon {
             opacity: 0.5;
             cursor: not-allowed;
@@ -217,6 +252,15 @@
     <h2 class="section-title">Quick Links</h2>
 
     <div class="links-grid">
+        <a href="https://alumni-event-registration.ai.studio/" target="_blank" class="link-card featured">
+            <div class="icon icon-generic">🎟️</div>
+            <div class="info">
+                <h3>Event Registration</h3>
+                <p>Register for the reunion event</p>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
         <a href="https://travel-tracker-subhankar42.replit.app" target="_blank" class="link-card">
             <div class="icon icon-bus">🚌</div>
             <div class="info">
@@ -240,15 +284,6 @@
             <div class="info">
                 <h3>Alumni Quiz</h3>
                 <p>Test your REC 2001 knowledge</p>
-            </div>
-            <span class="arrow">→</span>
-        </a>
-
-        <a href="https://alumni-event-registration.ai.studio/" target="_blank" class="link-card">
-            <div class="icon icon-generic">🎟️</div>
-            <div class="info">
-                <h3>Event Registration</h3>
-                <p>Register for the reunion event</p>
             </div>
             <span class="arrow">→</span>
         </a>
